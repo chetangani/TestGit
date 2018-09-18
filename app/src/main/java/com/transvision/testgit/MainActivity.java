@@ -1,5 +1,6 @@
 package com.transvision.testgit;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,12 +16,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bt_test1 = findViewById(R.id.button);
-        bt_test3 = findViewById(R.id.button3);
+        bt_test3 = findViewById(R.id.button2);
         bt_test4 = findViewById(R.id.button4);
         bt_test1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Test1", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
             }
         });
         bt_test3.setOnClickListener(new View.OnClickListener() {
