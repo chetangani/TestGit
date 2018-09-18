@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button bt_test1;
+    Button bt_test1, bt_test2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,8 +15,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bt_test1 = findViewById(R.id.button);
+        bt_test2 = findViewById(R.id.button2);
 
         bt_test1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Test1", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt_test2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Test1", Toast.LENGTH_SHORT).show();
