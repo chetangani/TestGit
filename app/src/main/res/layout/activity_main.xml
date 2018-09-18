@@ -13,11 +13,10 @@
         android:layout_height="wrap_content"
         android:text="Button1"
         android:layout_margin="16dp"/>
-
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button3"
+        android:text="Button1"
         android:layout_margin="16dp"/>
 </LinearLayout>
